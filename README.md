@@ -5,6 +5,6 @@
 - Each task is a separate branch 
 
 ## 02 - Technologies
-### * JavaScript
-### * CSS
-### * HTML
+* JavaScript
+* CSS
+* HTML
