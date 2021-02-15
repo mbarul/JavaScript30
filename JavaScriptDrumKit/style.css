@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.keys {
+    background-image: url("./picture/piano.jpg");
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: flex-end;
+}
+
+.key {
+    border-radius: 10px;
+    width: 20vh;
+    height: 20vh;
+    border: 4px solid black;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 0.07s;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background: rgba(126, 37, 37, 0.7);
+    text-shadow: 0 0 5px black;
+
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: yellowgreen;
+    box-shadow: yellowgreen;
+}
+
+kbd {
+    display: block;
+    font-size: 40px;
+    ;
+}
