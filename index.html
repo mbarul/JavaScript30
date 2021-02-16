@@ -4,45 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Drum Kit</title>
+    <title>JS Clock</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="keys">
-        <div data-key="65" class="key"> 
-            <kbd>A</kbd>
-            <span class="sound">bells</span>
-            </div>
-        <div data-key="83" class="key">
-             <kbd>S</kbd>
-            <span class="sound">hihat</span>
-        </div>
-        <div data-key="68" class="key">
-             <kbd>D</kbd>
-            <span class="sound">kick</span>
-        </div>
-         
+    <div class="clock">
+        <div class="wrap">
+            <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="center"></div> 
     </div>
-    <audio data-key="65" src="./sounds/bells.wav"></audio>
-    <audio data-key="83" src="./sounds/hihat.wav"></audio>
-    <audio data-key="68" src="./sounds/kick.wav"></audio>
-
-    <script>
-        window.addEventListener('keydown', function (e){
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            if(!audio) return; // stop the function
-            audio.currentTime = 0;
-            audio.play();
-            key.classList.add('playing');
-            console.log(key);
-        });
-        function removeTransition(e){
-            if (e.propertyName !== 'transform') return //skip it
-            this.classList.remove('playing');
-        }
-        const keys = document.querySelectorAll('.key');
-        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-    </script>
+        
+    </div>
 </body>
 </html>
