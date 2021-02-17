@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: rgb(122, 122, 122, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@ body {
 .clock {
     width: 70vh;
     height: 70vh;
-    background-color: black;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,11 +19,62 @@ body {
     position: relative;
     height: 90%;
     width: 90%;
+    background-image: url(./picture/sea.jpg);
     background-color: blanchedalmond;
+
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 100%;
+    border: 5px solid black;
 }
 
-.hour {}
+.hour {
+    position: absolute;
+    width: 3%;
+    height: 26%;
+    background: black;
+    top: -24%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+    z-index: 1;
+
+}
+
+.minute {
+    position: absolute;
+    width: 2%;
+    height: 45%;
+    background: black;
+    top: -44%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+
+
+}
+
+.second {
+    position: absolute;
+    width: 1%;
+    height: 46%;
+    background: red;
+    top: -45%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+
+
+}
 
 .center {
     position: absolute;
@@ -31,11 +82,12 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 6%;
-    height: 6%;
+    width: 5%;
+    height: 5%;
     border-radius: 100%;
     background: white;
     border: 3px solid #1b1b1b;
     margin: auto;
+    z-index: 1;
 
 }
