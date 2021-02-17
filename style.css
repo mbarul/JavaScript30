@@ -72,8 +72,8 @@ body {
     margin: auto;
     transform-origin: bottom;
     transform: rotate(0deg);
-
-
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0, 2.13, 0.15, 1)
 }
 
 .center {
