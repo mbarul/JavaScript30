@@ -7,8 +7,8 @@ body {
 }
 
 .clock {
-    width: 70vh;
-    height: 70vh;
+    width: 80vh;
+    height: 80vh;
 
     display: flex;
     align-items: center;
@@ -90,4 +90,11 @@ body {
     margin: auto;
     z-index: 1;
 
+}
+
+@media only screen and (max-width: 640px) {
+    .clock {
+        width: 35vh;
+        height: 35vh;
+    }
 }
