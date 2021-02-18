@@ -1,16 +1,6 @@
- //Slider - value
- let sliderV = document.getElementById("rangeBlur");
- console.log("sliderV");
-
- //Image
- /*let imageBlur = document.getElementById("surf").style.filter = "blur(0px)";
-
- function changed() {
-      let obj = document.getElementById('surf').style.filter = 'blur(${blur}px)';
-      obj.style = "blur(" + document.getElementById("rangeBlur").value + "px)";
-  }
-imageBlur.innerHTML = blur;
-  blur.oninput = function changeBlur() {
-      imageBlur.innerHTML = this.value;
-  }
-  document.getElementById("rangeBlur").addEventListener('input', changeBlur);
+function changed() {
+    //getting image which one is to modify
+    let img = document.getElementById('surf');
+    //indication of the style that we want to change and showing a value which will change blur of picture
+    img.style.filter = "blur(" + document.getElementById("rangeBlur").value + "px)";
+}

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
     <title>Variables - CSS & JS</title>
     
 </head>
@@ -21,7 +20,7 @@
         </div>
             <div class= "col-6 pl-4" id="blurControls">
             <label for="Blur" class="text-primary  h4 col-4">Blur: </label>
-            <input type="range" class="custom-range col-7 pl-2 pr-2 pt-3 " id="rangeBlur" value="1" min="0" max="8">
+            <input type="range" class="custom-range col-7 pl-2 pr-2 pt-3 " onChange ="changed()" id="rangeBlur" value="0" min="0" max="8">
             </div>
             </div>
             <!--Image and background-->
@@ -35,5 +34,6 @@
         <div class="background"></div>
 
     </div>
+    <script src="java.js"></script>
 </body>
 </html>
