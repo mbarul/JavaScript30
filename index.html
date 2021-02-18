@@ -9,16 +9,27 @@
     <title>Variables - CSS & JS</title>
 </head>
 <body>
-    <div class="container p-3 my-3 mt-3 bg-dark text-white">
-        <h1>Update CSS Variables with JS</h1>
-        <div class="black"></div>
-
-            <label for="Spacing">Spacing: </label>
-           <input type="range" class="custom-range col-5 p-3 my-3" id="customRange" name="points1">
-            <label for="Blur">Blur: </label>
-            <input type="range" class="custom-range col-5 p-3 my-3" id="customRange" name="points2">
+    <!--Controls container-->
+    <div class="container p-5 mt-3 bg-dark text-white" id="Controls">
+        <h1 class="p-3">Update CSS Variables with <mark>JS</mark> </h1>
+         <div class="d-flex justify-content-around m-3">
+             <div class= "col-6" id="colorControls">
+            <label for="Spacing" class="text-primary h4 col-4">Color: </label>
+            <button type="button" class="btin btn-primary col-4 pl-0 pr-0 pt-0">Change color</button>
         </div>
-        <img src="" alt="">
+            <div class= "col-6 pl-4" id="blurControls">
+            <label for="Blur" class="text-primary  h4 col-4">Blur: </label>
+            <input type="range" class="custom-range col-7 pl-2 pr-2 pt-3 " id="customRange" name="points2">
+            </div>
+            </div>
+            <!--Image and background-->
+            <div class="d-flex justify-content-around">
+            <img class = "img-fluid img-thumbnail mt-3 col-5" src="./picture/surfing.jpg" alt="Surf">
+             <div class= "bg-primary col-5 mt-3 text-primary border"></div>
+            </div>
+            
+        </div>
+       
         <div class="background"></div>
 
     </div>
