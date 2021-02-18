@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
     <title>Variables - CSS & JS</title>
+    
 </head>
 <body>
     <!--Controls container-->
     <div class="container p-5 mt-3 bg-dark text-white" id="Controls">
-        <h1 class="p-3">Update CSS Variables with <mark>JS</mark> </h1>
+        <h1 class="p-3 text-center">Update CSS Variables with <mark>JS</mark> </h1>
          <div class="d-flex justify-content-around m-3">
              <div class= "col-6" id="colorControls">
             <label for="Spacing" class="text-primary h4 col-4">Color: </label>
@@ -19,12 +21,12 @@
         </div>
             <div class= "col-6 pl-4" id="blurControls">
             <label for="Blur" class="text-primary  h4 col-4">Blur: </label>
-            <input type="range" class="custom-range col-7 pl-2 pr-2 pt-3 " id="customRange" name="points2">
+            <input type="range" class="custom-range col-7 pl-2 pr-2 pt-3 " id="rangeBlur" value="1" min="0" max="8">
             </div>
             </div>
             <!--Image and background-->
             <div class="d-flex justify-content-around">
-            <img class = "img-fluid img-thumbnail mt-3 col-5" src="./picture/surfing.jpg" alt="Surf">
+            <img class = "surf img-fluid img-thumbnail mt-3 col-5" id="surf" src="./picture/surfing.jpg" alt="Surf">
              <div class= "bg-primary col-5 mt-3 text-primary border"></div>
             </div>
             

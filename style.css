@@ -1,4 +1,3 @@
-.main {
-    min-height: 100vh;
-    background-color: black;
+.surf {
+    filter: blur(0px);
 }
