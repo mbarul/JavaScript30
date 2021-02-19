@@ -12,4 +12,4 @@
 * HTML
 
 ## 03 - Challanges
-* Updating CSS variables with JS - https://happy-joliot-4b931f.netlify.app
+* Updating Blur Image and Background Color with JS  - https://happy-joliot-4b931f.netlify.app
