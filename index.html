@@ -14,19 +14,23 @@
     <div class="container p-5 mt-3 bg-dark text-white" id="Controls">
         <h1 class="p-3 text-center">Update CSS Variables with <mark>JS</mark> </h1>
          <div class="d-flex justify-content-around m-3">
-             <div class= "col-6" id="colorControls">
-            <label for="Spacing" class="text-primary h4 col-4">Color: </label>
-            <button type="button" class="btin btn-primary col-4 pl-0 pr-0 pt-0">Change color</button>
-        </div>
-            <div class= "col-6 pl-4" id="blurControls">
+            
+            <div class= "col-6 pl-1" id="blurControls">
             <label for="Blur" class="text-primary  h4 col-4">Blur: </label>
             <input type="range" class="custom-range col-7 pl-2 pr-2 pt-3 " onChange ="changed()" id="rangeBlur" value="0" min="0" max="8">
             </div>
+             <div class= "col-6 pl-3" id="colorControls">
+            <label for="Spacing" class="text-primary h4 col-3">Color: </label>
+            <input type="text" class="col-4 m-1 " name="" id="hex">
+            <input type="color" class="col-4 m-1" name="" id="color">
+
+           
+        </div>
             </div>
             <!--Image and background-->
             <div class="d-flex justify-content-around">
             <img class = "surf img-fluid img-thumbnail mt-3 col-5" id="surf" src="./picture/surfing.jpg" alt="Surf">
-             <div class= "bg-primary col-5 mt-3 text-primary border"></div>
+             <div class= "col-5 mt-3 text-primary border" id="myDiv"></div>
             </div>
             
         </div>
