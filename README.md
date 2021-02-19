@@ -7,9 +7,9 @@
 
 ## 02 - Technologies
 * JavaScript
+* Bootstrap
 * CSS
 * HTML
 
 ## 03 - Challanges
-* Clock - https://confident-noether-7c3303.netlify.app
-
+* Updating CSS variables with JS - https://happy-joliot-4b931f.netlify.app
