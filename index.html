@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Array Cardio 💪</title>
+  <title>Array Methods</title>
 </head>
 <body>
-  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <p><em>Check the JavaScript Console</em> 💁</p>
   <script>
     // Get your shorts on - this is an array workout!
     // ## Array Cardio Day 1
@@ -32,7 +32,7 @@
       'Belloc, Hilaire', 'Begin, Menachem', 'Bellow, Saul', 'Benchley, Robert', 'Blair, Robert', 'Benenson, Peter', 'Benjamin, Walter', 'Berlin, Irving',
       'Benn, Tony', 'Benson, Leana', 'Bent, Silas', 'Berle, Milton', 'Berry, Halle', 'Biko, Steve', 'Beck, Glenn', 'Bergman, Ingmar', 'Black, Elk', 'Berio, Luciano',
       'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin', 'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose',
-      'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
+      'Billings, Josh', 'Dirrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
     ];
     
     // Array.prototype.filter()
@@ -62,18 +62,45 @@ return total + (inventor.passed - inventor.year);
 },0);
 console.log(eachAgeOfInventors);
     // 5. Sort the inventors by years lived
+const age = inventors.sort(function(a,b){
 
-    // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-    // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const lastInventor = a.passed - a.year;
 
+const nextInventor = b.passed - b.year;
 
-    // 7. sort Exercise
+return lastInventor - nextInventor;
+
+});
+console.table(age);
+    
+
+    // 6. sort Exercise
     // Sort the people alphabetically by last name
+const sortByLastName = people.sort(function (lastOne, nextOne)
 
-    // 8. Reduce Exercise
+{
+
+const [aLast, aFirst] = lastOne.split(`, `);
+
+const [bLast, bFirst] = nextOne.split(`, `);
+
+return aLast > bLast ? 1: -1 ;
+
+});
+
+console.log(sortByLastName );
+    // 7. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+    const vehicleTypes = data.reduce(function (obj, item) {
+    if(!obj[item]){
+      obj[item] = 0;
+    }
+      obj[item]++;
+      return obj;
+    }, {})
+    console.log(vehicleTypes);
   </script>
 </body>
 </html>
