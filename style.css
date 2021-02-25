@@ -4,58 +4,85 @@
 }
 
 body {
+    background: rgb(97, 92, 92);
     display: flex;
     justify-content: center;
+    height: 100vh;
+
 }
 
+/*Main container*/
 .container {
-    min-height: 100vh;
-    width: 50vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.container>div {
     overflow: hidden;
-
-    /*position: relative;*/
+    width: 75vw;
 }
 
-.container>div>img {
-    height: 90vh;
+/*each of img container*/
+.container>div {
+    display: flex;
+    position: relative;
+    border: 1px black solid;
+    height: 100vh;
+
+    background-position: center;
+    background-size: cover;
 
 }
 
+.img01 {
+    background-image: url("/picture/1.jpg");
+    flex-grow: 1;
+}
+
+.img02 {
+    background-image: url("/picture/2.jpg");
+    flex-grow: 1;
+}
+
+.img03 {
+    background-image: url("/picture/3.jpg");
+    flex-grow: 1;
+}
+
+.img04 {
+    background-image: url("/picture/4.jpg");
+    flex-grow: 1;
+}
+
+.img05 {
+    background-image: url("/picture/5.jpg");
+    flex-grow: 1;
+}
+
+/*Paragraphs*/
 .container>div>p {
+    font-family: 'Akaya Kanadaka';
+    color: white;
+    -webkit-text-stroke: 1.2px black;
+    font-size: 2rem;
     width: 100%;
     position: absolute;
-    margin: auto;
+    display: block;
+    width: 15vw;
+    text-align: center;
+
 
 }
 
 .container>div>p:first-child {
-    position: absolute;
-    margin: auto;
-
-    top: 5px;
-
+    top: 5vh;
+    display: none;
 }
 
 .container>div>p:nth-child(2) {
-    position: absolute;
-    margin: auto;
-    text-align: center;
-    top: 100px;
+    top: 50%;
+    transform: translate(0%, -50%);
 
 }
 
 .container>div>p:nth-child(3) {
-    position: absolute;
-    margin: auto;
+    bottom: 5vh;
+    display: none;
 
-    bottom: 5px;
 }
