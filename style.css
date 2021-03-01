@@ -15,18 +15,24 @@ body {
 .container {
     display: flex;
     overflow: hidden;
-    width: 75vw;
+    width: 100vw;
+
 }
 
 /*each of img container*/
 .container>div {
+    transition:
+        flex 0.7s cubic-bezier(0.755, 0.05, 0.855, 0.06);
     display: flex;
     position: relative;
-    border: 1px black solid;
     height: 100vh;
-
     background-position: center;
     background-size: cover;
+
+}
+
+.img.open {
+    flex-grow: 8;
 
 }
 
@@ -64,7 +70,10 @@ body {
     width: 100%;
     position: absolute;
     display: block;
-    width: 15vw;
+    flex: 1 0 auto;
+
+
+    /*width: 15vw;*/
     text-align: center;
 
 
@@ -73,6 +82,11 @@ body {
 .container>div>p:first-child {
     top: 5vh;
     display: none;
+
+}
+
+.img.open-active>*:first-child {
+    display: block;
 }
 
 .container>div>p:nth-child(2) {
@@ -85,4 +99,8 @@ body {
     bottom: 5vh;
     display: none;
 
+}
+
+.img.open-active>*:nth-child(3) {
+    display: block;
 }
