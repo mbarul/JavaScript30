@@ -9,5 +9,5 @@
 * JavaScript
 
 ## 03 - Challanges
-*Exercises on the arrays -
+* Exercises on the arrays 
 
