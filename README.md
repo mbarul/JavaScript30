@@ -7,9 +7,7 @@
 
 ## 02 - Technologies
 * JavaScript
-* CSS
-* HTML
 
 ## 03 - Challanges
-* Clock - https://confident-noether-7c3303.netlify.app
+*Exercises on the arrays -
 
