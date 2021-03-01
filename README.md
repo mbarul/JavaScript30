@@ -16,4 +16,4 @@
 * Lesson 02 Clock - https://confident-noether-7c3303.netlify.app
 * Lesson 03 Updating Blur Image and Background Color with JS - https://happy-joliot-4b931f.netlify.app
 * Lesson 04 Exercises on the arrays
-* Lesson 05 Flex Panels Image Gallery - 
+* Lesson 05 Flex Panels Image Gallery - https://naughty-shaw-1662fa.netlify.app
