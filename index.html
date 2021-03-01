@@ -2,52 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Panels Image Gallery</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+  <title>Type Ahead 👀</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!--Container of gallery-->
-  <div class="container">
-    <!--IMG 1-->
-    <div class="img img01" id="img01">
-      <p>Cześć,</p>
-       <p>Weźmy</p>
-        <p>Kanapki</p>
-    </div>
 
-     <!--IMG 2-->
-    <div class="img img02" id="img02">
-      <p>Kupmy</p>
-       <p>Złóżmy</p>
-        <p>Rozłóżmy</p>
-    </div>
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+<script>
+const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+const cities = []
+ fetch(endpoint)
+ .then(blob => blob.json())
+.then(data => cities.push(...data));
 
-       <!--IMG 3-->
-    <div class="img img03" id="img03">
-      <p>Mam</p>
-       <p>To</p>
-        <p>!</p>
-    </div>
+function findMatches(wordToMatch, cities) {
+  return cities.filter(place =>{
+    const regex = new RegExp(wordToMatch, 'gi');
+    return place.city.match(regex) || place.state.match(regex)
+  } )
+}
 
-     <!--IMG 4-->
-    <div class="img img04" id="img04">
-      <p>Centrum</p>
-       <p>W</p>
-        <p>Perypetiach</p>
-    </div>
-
-     <!--IMG 5-->
-    <div class="img img05" id="img05">
-      <p>Idź</p>
-       <p>Całość</p>
-        <p>Naprzód</p>
-    </div>
-
-  </div>
-  <script src="javascript.js"></script>
+</script>
 </body>
 </html>

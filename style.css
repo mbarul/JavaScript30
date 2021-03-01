@@ -1,106 +1,76 @@
-* {
+html {
+    box-sizing: border-box;
+    background: #48388f;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+}
+
+.search-form {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+input.search {
+    margin: 0;
+    text-align: center;
+    outline: 0;
+    border: 10px solid #afadc0;
+    width: 140%;
+    left: -20%;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+    border-radius: 5px;
+    font-size: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.suggestions {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background: rgb(97, 92, 92);
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-
-}
-
-/*Main container*/
-.container {
-    display: flex;
-    overflow: hidden;
-    width: 100vw;
-
-}
-
-/*each of img container*/
-.container>div {
-    transition:
-        flex 0.7s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    display: flex;
     position: relative;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-
+    /*perspective: 20px;*/
 }
 
-.img.open {
-    flex-grow: 8;
-
+.suggestions li {
+    background: white;
+    list-style: none;
+    border-bottom: 1px solid #D8D8D8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
 }
 
-.img01 {
-    background-image: url("/picture/1.jpg");
-    flex-grow: 1;
+.suggestions li:nth-child(even) {
+    transform: perspective(200px) rotateX(7deg) translateY(2px) scale(1.001);
+    background: linear-gradient(to bottom, #ffffff67 0%, #EFEFEF 100%);
 }
 
-.img02 {
-    background-image: url("/picture/2.jpg");
-    flex-grow: 1;
+.suggestions li:nth-child(odd) {
+    transform: perspective(200px) rotateX(-7deg) translateY(3px);
+    background: linear-gradient(to top, #ffffff67 0%, #EFEFEF 100%);
 }
 
-.img03 {
-    background-image: url("/picture/3.jpg");
-    flex-grow: 1;
+span.population {
+    font-size: 15px;
 }
 
-.img04 {
-    background-image: url("/picture/4.jpg");
-    flex-grow: 1;
-}
-
-.img05 {
-    background-image: url("/picture/5.jpg");
-    flex-grow: 1;
-}
-
-/*Paragraphs*/
-.container>div>p {
-    font-family: 'Akaya Kanadaka';
-    color: white;
-    -webkit-text-stroke: 1.2px black;
-    font-size: 2rem;
-    width: 100%;
-    position: absolute;
-    display: block;
-    flex: 1 0 auto;
-
-
-    /*width: 15vw;*/
-    text-align: center;
-
-
-}
-
-.container>div>p:first-child {
-    top: 5vh;
-    display: none;
-
-}
-
-.img.open-active>*:first-child {
-    display: block;
-}
-
-.container>div>p:nth-child(2) {
-    top: 50%;
-    transform: translate(0%, -50%);
-
-}
-
-.container>div>p:nth-child(3) {
-    bottom: 5vh;
-    display: none;
-
-}
-
-.img.open-active>*:nth-child(3) {
-    display: block;
+.hl {
+    background: #48388f;
 }
