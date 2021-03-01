@@ -11,5 +11,5 @@
 * HTML
 
 ## 03 - Challanges
-* Flex panels image gallery -
+* Flex panels image gallery - https://naughty-shaw-1662fa.netlify.app
 
