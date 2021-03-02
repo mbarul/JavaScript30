@@ -17,4 +17,4 @@
 * Lesson 03 Updating Blur Image and Background Color with JS - https://happy-joliot-4b931f.netlify.app
 * Lesson 04 Exercises on the arrays
 * Lesson 05 Flex Panels Image Gallery - https://naughty-shaw-1662fa.netlify.app
-* Lesson 06 Ajax Type Ahead -
+* Lesson 06 Ajax Type Ahead - https://gracious-kepler-6c93ad.netlify.app
