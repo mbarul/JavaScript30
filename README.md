@@ -22,3 +22,4 @@
 * Lesson 08 HTML5 CANVAS
 * Lesson 09 Dev Tools Tricks
 * Lesson 10 Checkboxes
+* Lesson 11 Video Player
