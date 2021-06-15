@@ -7,7 +7,6 @@
 
 ## 02 - Technologies
 * JavaScript
-* Bootstrap
 * CSS
 * HTML
 
