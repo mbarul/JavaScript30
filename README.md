@@ -12,4 +12,4 @@
 * HTML
 
 ## 03 - Challanges
-* Lesson 11 Video Player
+* Lesson 1 Checkboxes
