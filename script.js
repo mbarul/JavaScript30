@@ -4,7 +4,7 @@ const progress = document.querySelector(".progress__filled");
 
 const play = document.querySelector(".player__button");
 
-
+//
 const rwdBtn = document.querySelector(".player__controls button:nth-child(5)");
 const fwdBtn = document.querySelector(".player__controls button:nth-child(6)");
 const volumeSlider = document.querySelector('.player__controls input:nth-child(4)');
