@@ -7,9 +7,8 @@
 
 ## 02 - Technologies
 * JavaScript
-* Bootstrap
 * CSS
 * HTML
 
 ## 03 - Challanges
-* Lesson 1 Checkboxes
+* Lesson 10 Checkboxes
